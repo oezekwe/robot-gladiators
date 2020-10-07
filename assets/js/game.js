@@ -101,7 +101,8 @@ var fight = function(enemy) {
             var pickedEnemyObj = enemyInfo[i];
             pickedEnemyObj.health = randomNumber(40, 60);
             fight(pickedEnemyObj);
-            if(playerInfo.health > 0 && i < enemy.names.length-1){
+            debugger;
+            if(playerInfo.health > 0 && i < enemyInfo.length-1){
                 var storeConfirm= window.confirm("The fight is over, visit the store before the next round?");
 
                 if(storeConfirm){
